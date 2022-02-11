@@ -10,12 +10,12 @@
 :root {
     --primary-color: rgba(255, 68, 0, 0.8);
     
-    
     --seconday-color: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      
 }
+
 
 body {
     display: flex;
@@ -27,16 +27,16 @@ body {
 }
 
 .calculator-container {
-    width: 320px;
-    height: 520px;
+    width: 310px;
+    height: 510px;
     background-color: rgb(32, 30, 30);
     box-shadow: 1px 1px 3px black;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .calculator-input {
     width: 100%;
-    height: 30%;
+    height: 23%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -51,11 +51,14 @@ body {
 #calc {
     color: white;
     margin-bottom: .5rem;
+    font-size: 1.1rem;
 }
 
 #result {
     color: white;
-    
+    font-size: 2.5rem;
+    font-weight: 500;
+    min-height: 2.5rem;
 }
 
 
@@ -66,7 +69,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 70%;
+    height: 77%;
 }
 
 .btn-row {
@@ -102,7 +105,14 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: 400ms;
-} 
+}
+
+.calculator-btn-colored i {
+    font-size: 1.7rem;
+    margin-right: 4px;
+}
+
+
 .calculator-btn:active {
     box-shadow: none;
 }
