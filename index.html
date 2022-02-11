@@ -16,8 +16,8 @@
         </div>
         <div class="calculator-btns">
             <div class="btn-row">
-                <button onclick="teste()" class="calculator-btn-colored">%</button>
-                <button onclick="addOperation(`C`)" class="calculator-btn-colored">C</button>
+                <button onclick="addOperation('clear entry')" class="calculator-btn-colored">CE</button>
+                <button onclick="addOperation(`clear`)" class="calculator-btn-colored">C</button>
                 <button onclick="addNumber(`delete`)" class="calculator-btn-colored"><i class="fas fa-backspace"></i></button>
                 <button onclick="addOperation(`÷`)" class="calculator-btn-colored">÷</button>
             </div>
@@ -40,10 +40,10 @@
                 <button onclick="addOperation(`+`)" class="calculator-btn-colored">+</button>
             </div>
             <div class="btn-row">
-                <button onclick="addOperation()" class="calculator-btn">+/-</button>
+                <button onclick="addNumber('signs')" class="calculator-btn">+/-</button>
                 <button onclick="addNumber(`0`)" class="calculator-btn">0</button>
                 <button onclick="addNumber(`.`)" class="calculator-btn">,</button>
-                <button onclick="teste()" class="calculator-btn-colored">=</button>
+                <button onclick="calculate()" class="calculator-btn-colored">=</button>
             </div>
         </div>
     </div> 
