@@ -9,12 +9,11 @@ function addNumber (number){
     if (resetCalc) {
         numberChoser.innerHTML = ''
         resetCalc = false
+        negativeNumber = false
     }
     if (number === 'signs') {
         if (!negativeNumber) {
-            auxString = numberChoser.innerHTML
-            numberChoser.innerHTML = '-'
-            numberChoser.innerHTML += auxString
+            numberChoser.innerHTML = '-'+numberChoser.innerHTML
             negativeNumber = true
             return
         } else {
@@ -48,6 +47,9 @@ function addOperation (operation) {
         return
     }  
     if(numberChoser.innerHTML.length > 0) {
+        if(negativeNumber){
+            numberChoser.innerHTML = '('+numberChoser.innerHTML+')'
+        }
         mathExpression.push(numberChoser.innerHTML);
         mathExpression.push(operation);
         elements = '';
